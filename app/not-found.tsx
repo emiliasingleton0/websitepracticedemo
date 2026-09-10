@@ -1,0 +1,1 @@
+export default function NotFound(){return <main className="wrap notfound"><div><div className="eyebrow mono">404 / not found</div><h1 style={{fontSize:72,letterSpacing:'-.07em'}}>Wrong branch.</h1><p style={{color:'var(--muted)'}}>That page doesn’t exist.</p><a className="cta" href="/">Return home ↗</a></div></main>}

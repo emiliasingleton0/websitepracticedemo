@@ -1,0 +1,3 @@
+'use client'
+import {useEffect,useState} from 'react'
+export default function CookieBanner(){const [show,setShow]=useState(false);useEffect(()=>{setShow(localStorage.getItem('analytics-consent')===null)},[]);if(!show)return null;const choose=(value:'accepted'|'declined')=>{localStorage.setItem('analytics-consent',value);setShow(false)};return <aside className="cookie" aria-label="Cookie and analytics consent"><p>We use privacy-friendly analytics to understand which pages are useful. You can accept or decline analytics.</p><button className="accept" onClick={()=>choose('accepted')}>Accept analytics</button><button className="decline" onClick={()=>choose('declined')}>Decline</button></aside>}

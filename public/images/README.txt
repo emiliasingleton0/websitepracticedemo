@@ -1,0 +1,1 @@
+Add project images here as AVIF or WebP when you have real screenshots/photos. Use Next/Image with descriptive alt text. The current portfolio uses lightweight CSS preview art, so there are no heavy raster assets to optimize yet.
